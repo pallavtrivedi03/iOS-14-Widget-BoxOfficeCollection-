@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CBF34EAF1A34C2B7C64FC82 /* Pods_BoxOfficeWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2856205B01047F35C50F81FB /* Pods_BoxOfficeWidgetExtension.framework */; };
+		7BEF3EC124FE4B8400F194A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EC024FE4B8400F194A8 /* AppDelegate.swift */; };
+		7BEF3EC324FE4B8400F194A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EC224FE4B8400F194A8 /* SceneDelegate.swift */; };
+		7BEF3EC524FE4B8500F194A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EC424FE4B8400F194A8 /* ViewController.swift */; };
+		7BEF3EC824FE4B8500F194A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEF3EC624FE4B8500F194A8 /* Main.storyboard */; };
+		7BEF3ECA24FE4B8600F194A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEF3EC924FE4B8600F194A8 /* Assets.xcassets */; };
+		7BEF3ECD24FE4B8600F194A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEF3ECB24FE4B8600F194A8 /* LaunchScreen.storyboard */; };
+		7BEF3EDB24FE4BDE00F194A8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEF3EDA24FE4BDE00F194A8 /* WidgetKit.framework */; };
+		7BEF3EDD24FE4BDE00F194A8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BEF3EDC24FE4BDE00F194A8 /* SwiftUI.framework */; };
+		7BEF3EE024FE4BDE00F194A8 /* BoxOfficeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EDF24FE4BDE00F194A8 /* BoxOfficeWidget.swift */; };
+		7BEF3EE224FE4BDF00F194A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEF3EE124FE4BDF00F194A8 /* Assets.xcassets */; };
+		7BEF3EE624FE4BDF00F194A8 /* BoxOfficeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7BEF3ED824FE4BDE00F194A8 /* BoxOfficeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7BEF3EEC24FE646800F194A8 /* MovieInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EEB24FE646700F194A8 /* MovieInfoLoader.swift */; };
+		7BEF3EED24FE64BB00F194A8 /* MovieInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEF3EEB24FE646700F194A8 /* MovieInfoLoader.swift */; };
+		7C0BB63E850180D68BA7D0B7 /* Pods_BoxOffice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C60F4B679143081AB55A193 /* Pods_BoxOffice.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BEF3EE424FE4BDF00F194A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BEF3EB524FE4B8400F194A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BEF3ED724FE4BDE00F194A8;
+			remoteInfo = BoxOfficeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7BEF3EEA24FE4BDF00F194A8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7BEF3EE624FE4BDF00F194A8 /* BoxOfficeWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0C60F4B679143081AB55A193 /* Pods_BoxOffice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxOffice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2856205B01047F35C50F81FB /* Pods_BoxOfficeWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoxOfficeWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39565D4A907997FF913390F5 /* Pods-BoxOfficeWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxOfficeWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-BoxOfficeWidgetExtension/Pods-BoxOfficeWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		6B4D28496F989941B07553F1 /* Pods-BoxOfficeWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxOfficeWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-BoxOfficeWidgetExtension/Pods-BoxOfficeWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		7740BEA4FAAD6BD99BF24910 /* Pods-BoxOffice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxOffice.release.xcconfig"; path = "Target Support Files/Pods-BoxOffice/Pods-BoxOffice.release.xcconfig"; sourceTree = "<group>"; };
+		7BEF3EBD24FE4B8400F194A8 /* BoxOffice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxOffice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEF3EC024FE4B8400F194A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BEF3EC224FE4B8400F194A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7BEF3EC424FE4B8400F194A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BEF3EC724FE4B8500F194A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BEF3EC924FE4B8600F194A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BEF3ECC24FE4B8600F194A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BEF3ECE24FE4B8600F194A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEF3ED824FE4BDE00F194A8 /* BoxOfficeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BoxOfficeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BEF3EDA24FE4BDE00F194A8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7BEF3EDC24FE4BDE00F194A8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7BEF3EDF24FE4BDE00F194A8 /* BoxOfficeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeWidget.swift; sourceTree = "<group>"; };
+		7BEF3EE124FE4BDF00F194A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BEF3EE324FE4BDF00F194A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEF3EEB24FE646700F194A8 /* MovieInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoLoader.swift; sourceTree = "<group>"; };
+		E224BF7EA5ECE971A34D6C70 /* Pods-BoxOffice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxOffice.debug.xcconfig"; path = "Target Support Files/Pods-BoxOffice/Pods-BoxOffice.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BEF3EBA24FE4B8400F194A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C0BB63E850180D68BA7D0B7 /* Pods_BoxOffice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEF3ED524FE4BDE00F194A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEF3EDD24FE4BDE00F194A8 /* SwiftUI.framework in Frameworks */,
+				7BEF3EDB24FE4BDE00F194A8 /* WidgetKit.framework in Frameworks */,
+				1CBF34EAF1A34C2B7C64FC82 /* Pods_BoxOfficeWidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BEF3EB424FE4B8400F194A8 = {
+			isa = PBXGroup;
+			children = (
+				7BEF3EBF24FE4B8400F194A8 /* BoxOffice */,
+				7BEF3EDE24FE4BDE00F194A8 /* BoxOfficeWidget */,
+				7BEF3ED924FE4BDE00F194A8 /* Frameworks */,
+				7BEF3EBE24FE4B8400F194A8 /* Products */,
+				F318E1F563EEB650DE91DB33 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		7BEF3EBE24FE4B8400F194A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF3EBD24FE4B8400F194A8 /* BoxOffice.app */,
+				7BEF3ED824FE4BDE00F194A8 /* BoxOfficeWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BEF3EBF24FE4B8400F194A8 /* BoxOffice */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF3EC024FE4B8400F194A8 /* AppDelegate.swift */,
+				7BEF3EC224FE4B8400F194A8 /* SceneDelegate.swift */,
+				7BEF3EC424FE4B8400F194A8 /* ViewController.swift */,
+				7BEF3EC624FE4B8500F194A8 /* Main.storyboard */,
+				7BEF3EC924FE4B8600F194A8 /* Assets.xcassets */,
+				7BEF3ECB24FE4B8600F194A8 /* LaunchScreen.storyboard */,
+				7BEF3ECE24FE4B8600F194A8 /* Info.plist */,
+			);
+			path = BoxOffice;
+			sourceTree = "<group>";
+		};
+		7BEF3ED924FE4BDE00F194A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF3EDA24FE4BDE00F194A8 /* WidgetKit.framework */,
+				7BEF3EDC24FE4BDE00F194A8 /* SwiftUI.framework */,
+				0C60F4B679143081AB55A193 /* Pods_BoxOffice.framework */,
+				2856205B01047F35C50F81FB /* Pods_BoxOfficeWidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BEF3EDE24FE4BDE00F194A8 /* BoxOfficeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF3EDF24FE4BDE00F194A8 /* BoxOfficeWidget.swift */,
+				7BEF3EE124FE4BDF00F194A8 /* Assets.xcassets */,
+				7BEF3EE324FE4BDF00F194A8 /* Info.plist */,
+				7BEF3EEB24FE646700F194A8 /* MovieInfoLoader.swift */,
+			);
+			path = BoxOfficeWidget;
+			sourceTree = "<group>";
+		};
+		F318E1F563EEB650DE91DB33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E224BF7EA5ECE971A34D6C70 /* Pods-BoxOffice.debug.xcconfig */,
+				7740BEA4FAAD6BD99BF24910 /* Pods-BoxOffice.release.xcconfig */,
+				39565D4A907997FF913390F5 /* Pods-BoxOfficeWidgetExtension.debug.xcconfig */,
+				6B4D28496F989941B07553F1 /* Pods-BoxOfficeWidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BEF3EBC24FE4B8400F194A8 /* BoxOffice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEF3ED124FE4B8600F194A8 /* Build configuration list for PBXNativeTarget "BoxOffice" */;
+			buildPhases = (
+				F93AEC6A924381F6E853BA10 /* [CP] Check Pods Manifest.lock */,
+				7BEF3EB924FE4B8400F194A8 /* Sources */,
+				7BEF3EBA24FE4B8400F194A8 /* Frameworks */,
+				7BEF3EBB24FE4B8400F194A8 /* Resources */,
+				7BEF3EEA24FE4BDF00F194A8 /* Embed App Extensions */,
+				C54D5A494E16CE0A64C99576 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BEF3EE524FE4BDF00F194A8 /* PBXTargetDependency */,
+			);
+			name = BoxOffice;
+			productName = BoxOffice;
+			productReference = 7BEF3EBD24FE4B8400F194A8 /* BoxOffice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BEF3ED724FE4BDE00F194A8 /* BoxOfficeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BEF3EE724FE4BDF00F194A8 /* Build configuration list for PBXNativeTarget "BoxOfficeWidgetExtension" */;
+			buildPhases = (
+				D85137287DAD5377EC32A0A1 /* [CP] Check Pods Manifest.lock */,
+				7BEF3ED424FE4BDE00F194A8 /* Sources */,
+				7BEF3ED524FE4BDE00F194A8 /* Frameworks */,
+				7BEF3ED624FE4BDE00F194A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxOfficeWidgetExtension;
+			productName = BoxOfficeWidgetExtension;
+			productReference = 7BEF3ED824FE4BDE00F194A8 /* BoxOfficeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BEF3EB524FE4B8400F194A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7BEF3EBC24FE4B8400F194A8 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7BEF3ED724FE4BDE00F194A8 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 7BEF3EB824FE4B8400F194A8 /* Build configuration list for PBXProject "BoxOffice" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BEF3EB424FE4B8400F194A8;
+			productRefGroup = 7BEF3EBE24FE4B8400F194A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BEF3EBC24FE4B8400F194A8 /* BoxOffice */,
+				7BEF3ED724FE4BDE00F194A8 /* BoxOfficeWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BEF3EBB24FE4B8400F194A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEF3ECD24FE4B8600F194A8 /* LaunchScreen.storyboard in Resources */,
+				7BEF3ECA24FE4B8600F194A8 /* Assets.xcassets in Resources */,
+				7BEF3EC824FE4B8500F194A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEF3ED624FE4BDE00F194A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEF3EE224FE4BDF00F194A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C54D5A494E16CE0A64C99576 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxOffice/Pods-BoxOffice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoxOffice/Pods-BoxOffice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoxOffice/Pods-BoxOffice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D85137287DAD5377EC32A0A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxOfficeWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93AEC6A924381F6E853BA10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoxOffice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BEF3EB924FE4B8400F194A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEF3EC524FE4B8500F194A8 /* ViewController.swift in Sources */,
+				7BEF3EC124FE4B8400F194A8 /* AppDelegate.swift in Sources */,
+				7BEF3EC324FE4B8400F194A8 /* SceneDelegate.swift in Sources */,
+				7BEF3EEC24FE646800F194A8 /* MovieInfoLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BEF3ED424FE4BDE00F194A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEF3EE024FE4BDE00F194A8 /* BoxOfficeWidget.swift in Sources */,
+				7BEF3EED24FE64BB00F194A8 /* MovieInfoLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BEF3EE524FE4BDF00F194A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BEF3ED724FE4BDE00F194A8 /* BoxOfficeWidgetExtension */;
+			targetProxy = 7BEF3EE424FE4BDF00F194A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BEF3EC624FE4B8500F194A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEF3EC724FE4B8500F194A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BEF3ECB24FE4B8600F194A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BEF3ECC24FE4B8600F194A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BEF3ECF24FE4B8600F194A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BEF3ED024FE4B8600F194A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BEF3ED224FE4B8600F194A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E224BF7EA5ECE971A34D6C70 /* Pods-BoxOffice.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YVQQ2K649;
+				INFOPLIST_FILE = BoxOffice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungama.hungamamovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BEF3ED324FE4B8600F194A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7740BEA4FAAD6BD99BF24910 /* Pods-BoxOffice.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YVQQ2K649;
+				INFOPLIST_FILE = BoxOffice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungama.hungamamovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BEF3EE824FE4BDF00F194A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39565D4A907997FF913390F5 /* Pods-BoxOfficeWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YVQQ2K649;
+				INFOPLIST_FILE = BoxOfficeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungama.hungamamovies.BoxOffice.BoxOfficeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BEF3EE924FE4BDF00F194A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B4D28496F989941B07553F1 /* Pods-BoxOfficeWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YVQQ2K649;
+				INFOPLIST_FILE = BoxOfficeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungama.hungamamovies.BoxOffice.BoxOfficeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BEF3EB824FE4B8400F194A8 /* Build configuration list for PBXProject "BoxOffice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEF3ECF24FE4B8600F194A8 /* Debug */,
+				7BEF3ED024FE4B8600F194A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BEF3ED124FE4B8600F194A8 /* Build configuration list for PBXNativeTarget "BoxOffice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEF3ED224FE4B8600F194A8 /* Debug */,
+				7BEF3ED324FE4B8600F194A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BEF3EE724FE4BDF00F194A8 /* Build configuration list for PBXNativeTarget "BoxOfficeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BEF3EE824FE4BDF00F194A8 /* Debug */,
+				7BEF3EE924FE4BDF00F194A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BEF3EB524FE4B8400F194A8 /* Project object */;
+}
